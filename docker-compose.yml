@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: ejemplo-app
+    restart: unless-stopped
+    ports:
+      - "8099:80"
